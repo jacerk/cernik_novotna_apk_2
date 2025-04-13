@@ -605,6 +605,7 @@ class Algorithms:
                     dx = p2.x() - p1.x()
                     dy = p2.y() - p1.y()
                     length_sq = dx * dx + dy * dy
+                    all_diagonals_data.append((p1, p2, length_sq)) # Add diagonal data
 
             # Sort by length squared (descending)
             all_diagonals_data.sort(key=lambda item: item[2], reverse=True)
